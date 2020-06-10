@@ -145,3 +145,85 @@ h2 {
 footer {
     padding: 50px 0 20px 0;
 }
+
+/***** Tablet Styles *****/
+
+@media only screen and (min-width: 768px) {
+    
+    /* Header */
+
+    h1 {
+        font-size: 5em;
+    }
+
+    /* Instructions */
+
+    #instructions {
+        width: 60%;
+        padding: 50px 0
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    /* Story Form */
+
+    .story-input label {
+        font-size: 1.5em;
+    }
+
+}
+
+/***** Desktop Styles *****/
+
+@media only screen and (min-width: 1024px) {
+
+    /* Header */
+
+    h1 {
+        font-size: 3em;
+    }
+
+    /* Instructions */
+
+    #instructions {
+        width: 46%;
+        padding: 35px 0;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    #instructions p {
+        font-size: 1em;
+    }
+
+    /* Story Form */
+
+    #story-form {
+        width: 50%;
+    }
+
+    .story-input {
+        width: 60%;
+    }
+
+    .story-input label {
+        font-size: 1em;
+        padding-bottom: 15px;
+    }
+
+    .story-input input {
+        font-size: 1em;
+        height: 30px;
+    }
+
+    button {
+        width: 35%;
+        font-size: 2em;
+        margin: 30px 0;
+    }
+
+}
