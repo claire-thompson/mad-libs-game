@@ -1,8 +1,11 @@
 <!DOCTYPE html>
+<html lang='en'>
 
 <head>
+    <meta charset='UTF-8'>
     <title>Mad Libs</title>
     <link href='style.css' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -10,50 +13,80 @@
         <h1>Mad Libs!</h1>
     </header>
     <main>
-        <h2>Instructions</h2>
-        <p>Add the specified type of word to each box, press 'Go!', and see your very own silly version of <span>Romeo
-                and Juliet</span>'s prologue.</p>
-        <form>
-            <label for='noun1'>Noun (Plural):</label>
-            <input type='text' id='noun1'>
-            <label for='place'>Place:</label>
-            <input type='text' id='place'>
-            <label for='noun2'>Noun:</label>
-            <input type='text' id='noun2'>
-            <label for='noun3'>Noun (Plural):</label>
-            <input type='text' id='noun3'>
-            <label for='noun4'>Noun:</label>
-            <input type='text' id='noun4'>
-            <label for='adjective1'>Adjective:</label>
-            <input type='text' id='adjective1'>
-            <label for='verb1'>Verb:</label>
-            <input type='text' id='verb1'>
-            <label for='number'>Number:</label>
-            <input type='text' id='number'>
-            <label for='adjective2'>Adjective:</label>
-            <input type='text' id='adjective2'>
-            <label for='body-part'>Body Part:</label>
-            <input type='text' id='body-part'>
-            <label for='verb2'>Verb:</label>
-            <input type='text' id='verb2'>
-            <button type='submit'>Go!</button>
-        </form>
+        <section id='instructions'>
+            <h2>Instructions</h2>
+            <p>Add the specified type of word to each box, press 'Go!', and see your very own silly version of
+                <span>Romeo and Juliet</span>'s prologue.</p>
+        </section>
+        <section id='story-form'>
+            <article class='story-input'>
+                <label for='noun1'>Noun (Plural):</label>
+                <input type='text' id='noun1' autocomplete="off">
+            </article>
+            <article class='story-input'>
+                <label for='place'>Place:</label>
+                <input type='text' id='place' autocomplete="off">
+            </article>
+            <article class='story-input'>
+                <label for='noun2'>Noun:</label>
+                <input type='text' id='noun2' autocomplete="off">
+            </article>
+            <article class='story-input'>
+                <label for='noun3'>Noun (Plural):</label>
+                <input type='text' id='noun3' autocomplete="off">
+            </article>
+            <article class='story-input'>
+                <label for='noun4'>Noun:</label>
+                <input type='text' id='noun4' autocomplete="off">
+            </article>
+            <article class='story-input'>
+                <label for='adjective1'>Adjective:</label>
+                <input type='text' id='adjective1' autocomplete="off">
+            </article>
+            <article class='story-input'>
+                <label for='verb1'>Verb:</label>
+                <input type='text' id='verb1' autocomplete="off">
+            </article>
+            <article class='story-input'>
+                <label for='number'>Number:</label>
+                <input type='text' id='number' autocomplete="off">
+            </article>
+            <article class='story-input'>
+                <label for='adjective2'>Adjective:</label>
+                <input type='text' id='adjective2' autocomplete="off">
+            </article>
+            <article class='story-input'>
+                <label for='body-part'>Body Part:</label>
+                <input type='text' id='body-part' autocomplete="off">
+            </article>
+            <article class='story-input'>
+                <label for='verb2'>Verb:</label>
+                <input type='text' id='verb2' autocomplete="off">
+            </article>
+            <button id='submit-button'>Go!</button>
+        </section>
         <section id='story'>
-            <p>Two <span id='first-noun'></span>, both alike in dignity,<br>
-                In fair <span id='place-name'></span>, where we lay our scene,<br>
-                From ancient <span id='second-noun'></span> break to new mutiny,<br>
+            <p>Two <span id='first-noun' class='story-outputs'></span>, both alike in dignity,<br>
+                In fair <span id='place-name' class='story-outputs'></span>, where we lay our scene,<br>
+                From ancient <span id='second-noun' class='story-outputs'></span> break to new mutiny,<br>
                 Where civil blood makes civil hands unclean.<br>
                 From forth the fatal loins of these two foes<br>
-                A pair of star-cross`d <span id='third-noun'></span> take their life;<br>
+                A pair of star-cross`d <span id='third-noun' class='story-outputs'></span> take their life;<br>
                 Whole misadventured piteous overthrows<br>
-                Do with their <span id='fourth-noun'></span> bury their parents` strife.<br>
-                The fearful passage of their <span id='first-adjective'></span> love,<br>
+                Do with their <span id='fourth-noun' class='story-outputs'></span> bury their parents` strife.<br>
+                The fearful passage of their <span id='first-adjective' class='story-outputs'></span> love,<br>
                 And the continuance of their parents` rage,<br>
-                Which, but their children`s end, nought could <span id='first-verb'></span>,<br>
-                Is now the <span id='number-place'></span> hours` traffic of our stage;<br>
-                The which if you with <span id='second-adjective'></span> <span id='body-place'></span> attend,<br>
-                What here shall <span id='second-verb'></span>, our toil shall strive to mend.</p>
+                Which, but their children`s end, nought could <span id='first-verb' class='story-outputs'></span>,<br>
+                Is now the <span id='number-word' class='story-outputs'></span> hours` traffic of our stage;<br>
+                The which if you with <span id='second-adjective' class='story-outputs'></span> <span
+                    id='body-word'></span> attend,<br>
+                What here shall <span id='second-verb' class='story-outputs'></span>, our toil shall strive to mend.</p>
+            <button id='play-again'>Play Again</button>
         </section>
     </main>
     <footer>Created by Claire Thompson</footer>
+
+    <script src='script.js'></script>
 </body>
+
+</html>
