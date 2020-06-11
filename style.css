@@ -34,8 +34,7 @@ button {
 
 button:hover {
     background-color: #ffffff;
-    color: #ff7878;
-    border: #ff7878 solid 2px;
+    color: #757575;
 }
 
 /***** Mobile Styles *****/
